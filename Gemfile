@@ -35,7 +35,11 @@ group :development do
   # Use foreman for lanching processes
   gem 'foreman'
 
+  # Code style
   gem 'rubocop'
+
+  # Database annotations
+  gem 'annotate'
 end
 
 group :test do

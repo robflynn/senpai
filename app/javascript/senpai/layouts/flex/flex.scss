@@ -1,9 +1,7 @@
 &--flex {
-	.row,
-	.horizontal {
+
+	@mixin flex-variants {
 		display: flex;
-		flex-direction: row;
-		background: red;
 
 	    &--between {
 	      justify-content: space-between;
@@ -30,12 +28,19 @@
 	    }
 	}
 
+	.row,
+	.horizontal, {
+		@include flex-variants();
+
+		flex-direction: row;
+	}
+
 	.col,
 	.vertical,
 	.column {
-		display: flex;
+		@include flex-variants();
+		
 		flex-direction: column;
-		background: green;
 	}
 
 	.flex-grow {
