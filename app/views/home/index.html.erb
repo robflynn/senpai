@@ -1,2 +1,10 @@
 <h1>Home#index</h1>
 <p>Find me in app/views/home/index.html.erb</p>
+
+<%= component_box title: "Hello" do |c| %>
+	<b>I am inside the box</b>
+
+	<%= component_box title: "ok" do %>
+		<p>This is also inside abox. A box in a box.</p>
+	<% end %>
+<% end %>
