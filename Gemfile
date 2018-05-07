@@ -34,6 +34,8 @@ group :development do
 
   # Use foreman for lanching processes
   gem 'foreman'
+
+  gem 'rubocop'
 end
 
 group :test do
