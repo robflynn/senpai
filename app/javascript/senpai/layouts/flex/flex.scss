@@ -1,0 +1,44 @@
+&--flex {
+	.row,
+	.horizontal {
+		display: flex;
+		flex-direction: row;
+		background: red;
+
+	    &--between {
+	      justify-content: space-between;
+	    }
+
+	    &--around {
+	      justify-content: space-around;
+	    }
+
+	    &--wrap {
+	      flex-wrap: wrap;
+	    }
+
+	    &--center {
+	      justify-content: center;
+	    }
+
+	    &--start {
+	      align-items: flex-start;
+	    }
+
+	    &--end {
+	      align-items: flex-end;
+	    }
+	}
+
+	.col,
+	.vertical,
+	.column {
+		display: flex;
+		flex-direction: column;
+		background: green;
+	}
+
+	.flex-grow {
+		flex-grow: 1;
+	}
+}
