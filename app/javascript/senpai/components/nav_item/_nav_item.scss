@@ -1,0 +1,43 @@
+.nav--item {
+    display: flex;
+    flex-direction: column;                                 
+    text-decoration: none;
+    margin: $widget_padding;
+    padding-right: $widget_padding + 5px;
+    border-right: inset 1px $highlight_color;
+
+    @include desktop {
+        border-right: none;
+        padding-right: $widget_padding;
+        border-bottom: inset 1px $highlight_color;
+        padding-bottom: $widget_padding + 5px;
+    }
+
+    &:first-child {
+    }
+
+    &:last-child {
+        border-right: solid 1px transparent;
+    }
+
+    .icon, {
+        padding: 0;
+        margin: 0;
+        margin: 0 auto;
+        width: 35px;
+        height: 35px;
+        background-color: #fff; // Fake it for now
+        display: inline-block;
+    }
+
+    .title {
+        text-align: center;
+        margin: 0 auto;
+        color: color(light);
+        font-size: font-size(icon);
+        margin-top: 10px;
+        font-weight: normal;
+        min-width: 50px;
+        display: inline-block;
+    }
+}

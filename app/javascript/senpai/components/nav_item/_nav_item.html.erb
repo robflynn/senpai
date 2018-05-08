@@ -1,0 +1,16 @@
+<%
+    attributes = {
+        "class" => "nav--item #{options[:class]}",
+        "icon" => options[:icon],
+        "href" => options[:href],
+        "title" => options[:title]
+    }
+%>
+
+<li >
+    <a class="nav--item <%= options[:class] %>" href="<%= options[:src] %>">
+        <%= c_icon title: "Cases", icon: options[:icon] %>
+
+        <span class="title"><%= options[:title] %> </span>
+    </a>
+</li>

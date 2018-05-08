@@ -1,0 +1,16 @@
+$colors: (
+    blue: #00f,
+    red: #f00,
+    green: #0f0,
+    light: #ccc,
+    dark: #444
+);
+
+@function color($key) {
+    @if map-has-key($colors, $key) {
+        @return map-get($colors, $key);
+    }
+    @else {
+        @return #fff;
+    }
+}

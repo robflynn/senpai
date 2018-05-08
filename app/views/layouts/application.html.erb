@@ -12,8 +12,6 @@
         <%= csp_meta_tag %>
 
         <%= stylesheet_pack_tag 'senpai' %>
-        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-
         <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     </head>
 
@@ -26,13 +24,11 @@
             <div id="main" class="main-content">
                 <nav>
                     <ul>
-                        <li>
-                            <%= c_icon title: "Cases" %>
-                        </li>
-                        <li>Link</li>
-                        <li>Link</li>
-                        <li>Link</li>
-                        <li>Link</li>
+                        <%= c_nav_item title: "Cases" %>
+                        <%= c_nav_item title: "Cases" %>
+                        <%= c_nav_item title: "Cases" %>
+                        <%= c_nav_item title: "Cases" %>
+                        <%= c_nav_item title: "Cases" %>
                     </ul>
                 </nav>
                 

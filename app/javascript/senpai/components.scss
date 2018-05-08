@@ -1,2 +1,6 @@
-%component {    
+%component {
+    padding: 0;
 }
+
+@import "components/icon/_icon";
+@import "components/nav_item/_nav_item";
