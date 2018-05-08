@@ -1,4 +1,6 @@
 class ApplicationController < ActionController::Base
+	prepend_view_path Rails.root.join('app/javascript/senpai/')
+
 	before_action :require_logged_in
 
 	helper_method :current_user, :current_account, :current_scope

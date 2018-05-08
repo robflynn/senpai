@@ -1,0 +1,8 @@
+<%
+    attributes = {
+        "class" => "icon #{options[:class]}",
+        "src" => options[:src],
+        "title" => options[:title]
+    }
+%>
+<img <%= tag_attributes(attributes) %> />
