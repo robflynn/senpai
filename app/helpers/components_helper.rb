@@ -15,6 +15,10 @@ module ComponentsHelper
         component(:nav_item, options, &block)
     end
 
+    def c_nav(options = {}, &block)
+        component(:nav, options, &block)
+    end
+
     def tag_attributes(hash)        
         hash.select { |k,v| v}.map { |k,v| "#{k.strip}=\"#{v.strip}\"" }.join(" ").html_safe
     end

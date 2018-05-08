@@ -1,6 +1,12 @@
 // NoticeKeeper v2 Default Theme
 .theme {
     &--nk {
-        
+        header {
+            display: none;
+        }
+
+        footer {
+            display: none;
+        }
     }
 }

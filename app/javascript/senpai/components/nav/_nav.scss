@@ -1,0 +1,11 @@
+nav {    
+    display: flex;
+    flex-direction: row;                    
+    overflow-x: auto;                   
+    width: 100%;
+
+    @include desktop {
+        flex-direction: column;
+        width: auto;
+    }
+}

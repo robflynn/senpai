@@ -7,10 +7,9 @@
     }
 %>
 
-<li >
-    <a class="nav--item <%= options[:class] %>" href="<%= options[:src] %>">
-        <%= c_icon title: "Cases", icon: options[:icon] %>
+<a class="nav--item <%= options[:class] %>" href="<%= options[:src] %>">
+    <%= c_icon title: "Cases", icon: options[:icon] %>
 
-        <span class="title"><%= options[:title] %> </span>
-    </a>
-</li>
+    <span class="title"><%= options[:title] %> </span>
+</a>
+

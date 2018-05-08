@@ -22,16 +22,8 @@
             </header>
 
             <div id="main" class="main-content">
-                <nav>
-                    <ul>
-                        <%= c_nav_item title: "Cases" %>
-                        <%= c_nav_item title: "Cases" %>
-                        <%= c_nav_item title: "Cases" %>
-                        <%= c_nav_item title: "Cases" %>
-                        <%= c_nav_item title: "Cases" %>
-                    </ul>
-                </nav>
-                
+                <%= render partial: "layouts/nav" %>
+
                 <div class="app-content">                
                     <%= yield %>
                 </div>
